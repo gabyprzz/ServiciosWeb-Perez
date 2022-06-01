@@ -7,7 +7,7 @@
 
 .contenedor{
     display: grid;
-    /* width: 90%; */
+    /* width: 90%; Por ahora no */
     max-width: 1440px;
     margin: auto;
     /* gap: 10px; */
