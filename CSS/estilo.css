@@ -26,6 +26,8 @@
 
 .header{
     grid-area: header;
+    animation: fadeInDown ease;
+    animation-duration: 1.5s;
    
 }
 
@@ -217,6 +219,8 @@
 
 .footer{
     grid-area: footer;
+    animation: fadeInUp ease;
+    animation-duration: 1.5s;
 }
 
 .pieDePagina{
