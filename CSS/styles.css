@@ -1,0 +1,484 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  /* width: 90%; Por ahora no */
+  max-width: 1440px;
+  margin: auto;
+  /* gap: 10px; */
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1 fr)[4];
+      grid-template-rows: repeat(4, 1 fr);
+      grid-template-areas: "header header" "hero hero" "main main" "footer footer";
+}
+
+.contenedor2 {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  -webkit-animation: fadeInDown ease;
+          animation: fadeInDown ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.quote {
+  height: 450px;
+}
+
+.textoMain {
+  font-size: 2rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: 'Roboto';
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* GRADIENTE */
+.hero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hero;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.501821))), url("../Imagenes/image1.jpg");
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.501821) 100%), url("../Imagenes/image1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hero;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.619468)), to(black)), url("../Imagenes/soluciones.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.619468) 0%, black 100%), url("../Imagenes/soluciones.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hero;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.619468)), to(black)), url("../Imagenes/productos.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.619468) 0%, black 100%), url("../Imagenes/productos.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titulo {
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+.tituloAbout {
+  font-size: 9rem;
+  color: darkblue;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  margin: 30px 5px 30px 5px;
+}
+
+.equipo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.compa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px;
+  border-style: solid;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.compa p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: roboto;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.teamMember {
+  height: 250px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 18vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.containerProducts {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.product {
+  display: -ms-grid;
+  display: grid;
+  height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px;
+  border-style: solid;
+  border-color: red;
+  margin: 20px 0px 20px 0px;
+}
+
+.main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* margin: 0px 20px; */
+  /* background-color: ; */
+  font-family: 'Bebas Neue';
+  background-color: black;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 30px;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.75px;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-inner img {
+  height: 450px;
+  width: 450px;
+}
+
+/* ANIMACION DE NAV */
+.header {
+  -webkit-animation: fadeInDown ease;
+          animation: fadeInDown ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.menu a:after {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+}
+
+.menu a:hover:after {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+  -webkit-animation: fadeInUp ease;
+          animation: fadeInUp ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.pieDePagina {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* margin: 0px 20px; */
+  /* background-color: ; */
+  font-family: 'Bebas Neue';
+  background-color: black;
+}
+
+.pieDePagina a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 30px;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.75px;
+}
+
+/* ANIMACION DE FOOTER */
+.footer {
+  -webkit-animation: fadeInUp ease;
+          animation: fadeInUp ease;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.pieDePagina a:after {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+}
+
+.pieDePagina a:hover:after {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* ANIMACIONes */
+.card:hover {
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+h1 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .hero {
+    height: 200px;
+  }
+  .quote {
+    height: 250px;
+  }
+  .main {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .textoMain {
+    font-size: 1.5rem;
+  }
+}
+
+.hero2 .titulo {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 544px) {
+  .hero2 .titulo {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero2 .titulo {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero2 .titulo {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero2 .titulo {
+    font-size: 10rem;
+  }
+}
+
+.hero3 .titulo {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 544px) {
+  .hero3 .titulo {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero3 .titulo {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero3 .titulo {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero3 .titulo {
+    font-size: 10rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

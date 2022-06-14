@@ -1,0 +1,24 @@
+{
+  "name": "serviciosweb-perez-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabyprzz/ServiciosWeb-Perez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabyprzz/ServiciosWeb-Perez/issues"
+  },
+  "homepage": "https://github.com/gabyprzz/ServiciosWeb-Perez#readme",
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}

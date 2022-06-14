@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: grid;
+    /* width: 90%; Por ahora no */
+    max-width: 1440px;
+    margin: auto;
+    /* gap: 10px; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1 fr);
+    grid-template-areas: 
+    "header header"
+    "hero hero"
+    "main main"
+    "footer footer";
+}
+
+.contenedor2{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header{
+    grid-area: header;
+    animation: fadeInDown ease;
+    animation-duration: 1.5s;
+   
+}
+
+.quote{
+    height: 450px;
+}
+
+.textoMain{
+    font-size: 2rem;
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto';
+}
+
+.contact{
+    display: grid;
+    justify-content: center;
+   
+}
+
+
+/* GRADIENTE */
+.hero{
+    grid-area: hero;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5018207966780462) 100%), url("../Imagenes/image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2{
+    grid-area: hero;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6194678555015756) 0%, rgba(0,0,0,1) 100%), url("../Imagenes/soluciones.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero3{
+    grid-area: hero;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6194678555015756) 0%, rgba(0,0,0,1) 100%), url("../Imagenes/productos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 10rem;
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue';
+}
+
+.tituloAbout{
+    font-size: 9rem;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    margin: 30px 5px 30px 5px;
+}
+
+.equipo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.compa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+
+.compa p{
+    text-align: center;
+    margin-top: 10px;
+    font-family: roboto;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.teamMember{
+    height: 250px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+}
+
+.containerProducts{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.product{
+    display: grid;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border: 3px;
+    border-style: solid;
+    border-color: red;
+    margin: 20px 0px 20px 0px;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+   
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* margin: 0px 20px; */
+    /* background-color: ; */
+    font-family: 'Bebas Neue';
+    background-color: black;
+    
+}
+
+.menu a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.75px;
+}
+
+
+.carousel-inner{
+    height: 500px;
+}
+
+.carousel-inner img{
+    height: 450px;
+    width: 450px;
+}
+
+/* ANIMACION DE NAV */
+
+.header{
+    animation: fadeInDown ease;
+    animation-duration: 1.5s;
+}
+
+.menu a:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.menu a:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+
+.footer{
+    grid-area: footer;
+    animation: fadeInUp ease;
+    animation-duration: 1.5s;
+}
+
+.pieDePagina{
+    position: relative;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* margin: 0px 20px; */
+    /* background-color: ; */
+    font-family: 'Bebas Neue';
+    background-color: black;
+    
+}
+
+.pieDePagina a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: 0.75px;
+}
+
+/* ANIMACION DE FOOTER */
+
+.footer{
+    animation: fadeInUp ease;
+    animation-duration: 1.5s;
+}
+
+.pieDePagina a:after{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.pieDePagina a:hover:after{
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* ANIMACIONes */
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,4);
+    transform: translateY(-3%);
+    transition-duration: 0.5s;
+}
+
+h1 {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+
+
+@media only screen and (max-width: 360px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo{
+        font-size: 3rem;
+    }
+    .hero{
+        height: 200px;
+    }
+
+    .quote{
+        height: 250px;
+    }
+
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .textoMain{
+        font-size: 1.5rem;
+    }
+}
+
+
+.hero2 .titulo {font-size:1.5rem;} 
+ 
+@media (min-width: 544px) {  
+    .hero2 .titulo {font-size:2rem;} 
+}
+ 
+@media (min-width: 768px) {  
+    .hero2 .titulo {font-size:4rem;} 
+}
+ 
+@media (min-width: 992px) { 
+    .hero2 .titulo {font-size:7rem;} 
+}
+ 
+@media (min-width: 1200px) {  
+    .hero2 .titulo {font-size:10rem;}     
+}
+ 
+ 
+
+.hero3 .titulo {font-size:1.5rem;} 
+ 
+@media (min-width: 544px) {  
+    .hero3 .titulo {font-size:2rem;} 
+}
+ 
+@media (min-width: 768px) {  
+    .hero3 .titulo {font-size:4rem;} 
+}
+ 
+@media (min-width: 992px) { 
+    .hero3 .titulo {font-size:7rem;} 
+}
+ 
+@media (min-width: 1200px) {  
+    .hero3 .titulo {font-size:10rem;}     
+}
+ 
