@@ -1,3 +1,5 @@
+$font-color: yellow;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -50,41 +52,6 @@
 
 
 /* GRADIENTE */
-.hero{
-    grid-area: hero;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5018207966780462) 100%), url("../Imagenes/image1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero2{
-    grid-area: hero;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6194678555015756) 0%, rgba(0,0,0,1) 100%), url("../Imagenes/soluciones.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero3{
-    grid-area: hero;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6194678555015756) 0%, rgba(0,0,0,1) 100%), url("../Imagenes/productos.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .titulo{
     font-size: 10rem;
@@ -161,7 +128,12 @@
 .main{
     grid-area: main;
     display: flex;
+    background-color: #000500;
    
+}
+
+.main .textoMain{
+    color: $font-color;
 }
 
 .menu{
@@ -196,11 +168,6 @@
 }
 
 /* ANIMACION DE NAV */
-
-.header{
-    animation: fadeInDown ease;
-    animation-duration: 1.5s;
-}
 
 .menu a:after{
     content: "";

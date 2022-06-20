@@ -1,0 +1,48 @@
+// APLICANDO MIXIN
+
+@mixin animacionHeader {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+    -webkit-animation: fadeInDown ease;
+          animation: fadeInDown ease;
+    -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.header{
+    @include animacionHeader();
+}
+
+// APLICANDO EXTEND 
+
+.hero {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: hero;
+    background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.501821))), url("../Imagenes/image1.jpg");
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.501821) 100%), url("../Imagenes/image1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero2{
+    @extend .hero;
+  }
+
+  .hero3{
+    @extend .hero;
+  }

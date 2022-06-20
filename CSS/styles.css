@@ -57,72 +57,6 @@
 }
 
 /* GRADIENTE */
-.hero {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
-  background: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0.501821))), url("../Imagenes/image1.jpg");
-  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.501821) 100%), url("../Imagenes/image1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.619468)), to(black)), url("../Imagenes/soluciones.png");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.619468) 0%, black 100%), url("../Imagenes/soluciones.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: hero;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.619468)), to(black)), url("../Imagenes/productos.jpg");
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.619468) 0%, black 100%), url("../Imagenes/productos.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .titulo {
   font-size: 10rem;
   color: white;
@@ -228,6 +162,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #000500;
+}
+
+.main .textoMain {
+  color: yellow;
 }
 
 .menu {
@@ -264,13 +203,6 @@
 }
 
 /* ANIMACION DE NAV */
-.header {
-  -webkit-animation: fadeInDown ease;
-          animation: fadeInDown ease;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-}
-
 .menu a:after {
   content: "";
   position: absolute;
